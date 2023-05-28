@@ -110,5 +110,8 @@ def recommend(user_id):
 
     return jsonify({'list': duplicate_filter_list})
 
+@app.route('/recommend/test', methods=['GET'])
+def recommend():
+    return "Hello world!"
 
 app.run()
